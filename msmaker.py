@@ -1,3 +1,11 @@
+'''
+    File name: msmaker.py
+    Author: PeterSmich
+    Date created: 11/01/2016
+    Date last modified: 29/11/2016
+    Python Version: 2.7
+'''
+
 from Tkinter import *
 from ttk import *
 from tkColorChooser import askcolor
@@ -668,7 +676,7 @@ def main():
 	numFooter = 0
 	root = Tk()
 	root.title("msmaker")
-	root.iconbitmap(so.getcwd()+'/msmaker.ico')
+	root.iconbitmap(os.getcwd()+'/msmaker.ico')
 	app = Application(master=root)
 	app.mainloop()
 	try:
@@ -676,4 +684,5 @@ def main():
 	except:
 		pass 
 
-main()
+if __name__ == '__main__':
+	main()

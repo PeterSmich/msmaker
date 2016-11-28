@@ -9,5 +9,5 @@ Installation
 
 Developer
 --------
-Peter Kovach
+PeterSmich
 
