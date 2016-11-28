@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WalletItem>
+	<Version>1</Version>
+	<Id>0000</Id>
+	<WebServiceUrl/>
+	<AuthenticationToken/>
+	<ProductId />
+	<Kind>MembershipCard</Kind>
+	<DisplayName>PADI Advanced Open Water Diver</DisplayName>
+	<IssuerDisplayName>PADI Open Water Diver</IssuerDisplayName>
+	<Barcode>
+		<Symbology>CODE128</Symbology>
+		<Value>1608EW2873</Value>
+	</Barcode>
+	<DisplayMessage />
+	<HeaderColor>#0066ff</HeaderColor>
+	<BodyColor>#0068d1</BodyColor>
+	<HeaderFontColor>#ffffff</HeaderFontColor>
+	<BodyFontColor>#ffffff</BodyFontColor>
+	<LogoText />
+	<DisplayProperties>
+	<Header>
+		<Property>
+			<Key>Hd1</Key>
+			<Name>PADI</Name>
+			<Value>PADI Advanced Open Water Diver Certificate</Value>
+		</Property>
+	</Header>
+	<Primary>
+		<Property>
+			<Key>Pr1</Key>
+			<Name>Name</Name>
+			<Value>Peter Kovach</Value>
+		</Property>
+		<Property>
+			<Key>Pr2</Key>
+			<Name>&#160;</Name>
+			<Value>&#160;</Value>
+		</Property>
+	</Primary>
+	<Secondary>
+		<Property>
+			<Key>Bp1</Key>
+			<Name>Diver No.</Name>
+			<Value>1608EW2873</Value>
+		</Property>
+		<Property>
+			<Key>Bp2</Key>
+			<Name>Birth Date</Name>
+			<Value>01-Aug-1994</Value>
+		</Property>
+		<Property>
+			<Key>Bp3</Key>
+			<Name>Certificate Date</Name>
+			<Value>07-Aug-2016</Value>
+		</Property>
+	</Secondary>
+	<Footer>
+		<Property>
+			<Key>Ft1</Key>
+			<Name>Instructor No.</Name>
+			<Value>270144</Value>
+		</Property>
+		<Property>
+			<Key>Ft2</Key>
+			<Name>Instructor Name</Name>
+			<Value>Janos Benko</Value>
+		</Property>
+		<Property>
+			<Key>Ft5</Key>
+			<Name>&#160;</Name>
+			<Value>&#160;</Value>
+		</Property>
+		<Property>
+			<Key>Ft6</Key>
+			<Name>&#160;</Name>
+			<Value>&#160;</Value>
+		</Property>
+		<Property>
+			<Key>Ft4</Key>
+			<Name>Store No.</Name>
+			<Value>24784</Value>
+		</Property>
+		<Property>
+			<Key>Ft3</Key>
+			<Name>Store/Restore Name</Name>
+			<Value>DiveWorld Hungary</Value>
+		</Property>
+		<Property>
+			<Key>Ft7</Key>
+			<Name>&#160;</Name>
+			<Value>This qualification meets ISO 24801-2: Diver Level 2 - Autonomus Diver Standard. This diver has satisfactorily met the standards for this certificatio level as set forth by PADI. www.padi.com</Value>
+		</Property>
+	</Footer>
+	</DisplayProperties>
+</WalletItem>
