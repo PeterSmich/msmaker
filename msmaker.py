@@ -667,7 +667,8 @@ def main():
 	numSecondary = 0
 	numFooter = 0
 	root = Tk()
-	root.title("WalletItem.xml generator")
+	root.title("msmaker")
+	root.iconbitmap(so.getcwd()+'/msmaker.ico')
 	app = Application(master=root)
 	app.mainloop()
 	try:
