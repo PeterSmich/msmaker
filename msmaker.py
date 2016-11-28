@@ -5,6 +5,7 @@ from tkFileDialog import *
 import os
 import shutil as sh
 import zipfile as zp
+from random import randint
 
 class Pass:
 	kind = None
@@ -14,14 +15,15 @@ class Pass:
 	file = None
 	directory = None
 
-	def __init__(self, _kind ='General', _version = 1.0, _id = 1, _name = 'newPass', save = "def"):
+	def __init__(self, _kind ='General', _version = 1.0, _id = 1, _name = 'newPass', _save = "def"):
 		self.kind = _kind
 		self.version = _version
 		self.id = _id
 		self.name = _name
-		if save == "def":
-			save = os.getcwd()
-		self.directory = save+'/'+self.name
+		self.save = _save
+		if _save == "def":
+			self.save = os.getcwd()
+		self.directory = self.save+'/'+self.name
 		if not os.path.exists(self.directory):
 			os.makedirs(self.directory)
 		self.file = open(self.directory+'/WalletItem.xml','w')
@@ -31,7 +33,7 @@ class Pass:
 
 	def barcode(self, _type, _message, _dpm):
 		if _message == 'None':
-			self.file.write('\n\t<Barcode />\n\t\t<Symbology />\n\t\t<Value />\n\t<DisplayMessage />'.format(_type,_message))
+			self.file.write('\n\t<Barcode>\n\t\t<Symbology />\n\t\t<Value />\n\t</Barcode>\n\t<DisplayMessage />'.format(_type,_message))
 		else:
 			if _dpm == 'False':
 				self.file.write('\n\t<Barcode>\n\t\t<Symbology>{0}</Symbology>\n\t\t<Value>{1}</Value>\n\t</Barcode>\n\t<DisplayMessage />'.format(_type,_message))
@@ -94,10 +96,12 @@ class Pass:
 			sh.copy(promI, self.directory+'/PromotionalImage.png')
 
 	def zipIt(self):
-		zipf = zp.ZipFile(self.name+'.mswallet', 'w', zp.ZIP_STORED)
-		for root, dirs, files in os.walk(self.directory):
+		zipf = zp.ZipFile(self.save+'/'+self.name+'.mswallet', 'w', zp.ZIP_STORED)
+		for dirname, subdirs, files in os.walk(self.directory):
 			for file in files:
-				zipf.write(os.path.join(root, file))
+				sh.copy(os.path.join(dirname,file), os.getcwd())
+				zipf.write(file)
+				os.remove(file)
 		zipf.close()
 
 class Application(Frame):
@@ -126,11 +130,11 @@ class Application(Frame):
 		else:
 			_kind = self.v0.get()
 		if self.version.get() == 'Version':
-			_ver = '0.0'
+			_ver = '1'
 		else:
 			_ver = self.version.get()
 		if self.id.get() == 'Id':
-			_id = '0000'
+			_id = str(randint(1000,9999))
 		else:
 			_id = self.id.get()
 		if self.name.get() == 'Name of pass':
