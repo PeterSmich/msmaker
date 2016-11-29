@@ -16,7 +16,7 @@ Usage
 - If an atribute is empty in the P.S.F. or BASIC frame, it could result in a failour while adding the pass to the wallet.
 - Version atribute is not allowed to be 0.
 - Only use .png images with sepcific name. (Logog99x99.png ...)
-- To make an atribute empty use: '&#160;' (yes, with coma) 
+- To make an atribute empty use: &# 160; (yes, with coma, without space between # and 1) 
 
 Developer
 ---------
