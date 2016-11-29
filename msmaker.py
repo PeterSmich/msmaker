@@ -1,11 +1,3 @@
-'''
-    File name: msmaker.py
-    Author: PeterSmich
-    Date created: 11/01/2016
-    Date last modified: 29/11/2016
-    Python Version: 2.7
-'''
-
 from Tkinter import *
 from ttk import *
 from tkColorChooser import askcolor
@@ -365,7 +357,7 @@ class Application(Frame):
 			self.sn.insert(END, '1')
 			self.makeS()
 			self.snarray[0].delete(0, END)
-			self.snarray[0].insert(END, "DATE & TIME")
+			self.snarray[0].insert(END, "DATE : TIME")
 			self.svarray[0].delete(0, END)
 			self.svarray[0].insert(END, "time")
 
@@ -686,3 +678,4 @@ def main():
 
 if __name__ == '__main__':
 	main()
+
