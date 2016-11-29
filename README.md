@@ -7,7 +7,7 @@ Installation
 - Download msmaker as a zip and unzip it
 - Run msmaker.py
 Usage
------
+=====
 - If an atribute is default (as it appears) in the BASIC frame, it will not show on the pass.
 - If an atribute is empty in the P.S.F. or BASIC frame, it could result in a failour while adding the pass to the wallet.
 - Version atribute is not allowed to be 0.
