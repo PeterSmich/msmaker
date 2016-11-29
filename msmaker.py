@@ -23,7 +23,7 @@ class Pass:
 		self.save = _save
 		if _save == "def":
 			self.save = os.getcwd()
-		self.directory = self.save+'/'+self.name
+		self.directory = self.save+'/'+self.name+self.id
 		if not os.path.exists(self.directory):
 			os.makedirs(self.directory)
 		self.file = open(self.directory+'/WalletItem.xml','w')
@@ -229,8 +229,6 @@ class Application(Frame):
 		pas.copyImg(self.ie0.get(), self.ie1.get(), self.ie2.get(), self.ie3.get(), self.ie4.get(), self.ie5.get(), self.ie6.get())
 		
 		pas.zipIt()
-
-		self.quit()
 
 	def headcolor(self):
 		rgb = askcolor("#FFFFFF", title = "Head color")[0]
