@@ -6,9 +6,15 @@ Under developement...
 
 Installation
 ------------
+###With Python:
+
 1. Install Python 2.7 : https://www.python.org/
 2. Download msmaker as a zip and unzip it
 3. Run msmaker.py
+
+###For Windows:
+
+1. Download and run msmaker_setup.exe
 
 Usage
 -----
