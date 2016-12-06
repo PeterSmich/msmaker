@@ -1,6 +1,5 @@
 # msmaker
-msmaker is a graphical tool to generate .mswallet items.
-Under developement...
+msmaker is a graphical tool to generate manually .mswallet items. You can easily generate beautiful wallet items such as boarding pass, ticket, loyalty card. You can set your unique logo, background, contents and layout. Easy to use and generate wallet item for Windows Phone 8 and Windows 10 mobile.
 
 ****
 
@@ -14,7 +13,7 @@ Installation
 
 ###For Windows:
 
-1. Download and run msmaker_setup.exe
+1. Download and run [msmaker_setup.exe](https://github.com/PeterSmich/msmaker/edit/master/msmaker_setup.exe)
 
 Usage
 -----
