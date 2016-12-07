@@ -13,7 +13,7 @@ Installation
 
 ###For Windows:
 
-1. Download and run [msmaker_setup.exe](https://github.com/PeterSmich/msmaker/edit/master/msmaker_setup.exe)
+1. Download and run [msmaker_setup.exe](https://github.com/PeterSmich/msmaker/releases/download/v1.0/msmaker_setup.exe)
 
 Usage
 -----
