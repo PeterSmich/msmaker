@@ -1,9 +1,9 @@
 # msmaker
 msmaker is a graphical tool to generate manually .mswallet items. You can easily generate beautiful wallet items such as boarding pass, ticket, loyalty card. You can set your unique logo, background, contents and layout. Easy to use and generate wallet item for Windows Phone 8 and Windows 10 mobile.
 
-![Card img](/Sample/Card.png "Card")
-![Front img](/Sample/Front.png "Front")
-![Back img](/Sample/Back.png "Back")
+<img src="/Sample/Card.png" alt="Card img" width="144" height="256">
+<img src="/Sample/Front.png" alt="Front img" width="144" height="256">
+<img src="/Sample/Back.png" alt="Back img" width="144" height="256">
 
 
 ****
@@ -30,7 +30,7 @@ Usage
 - To make an atribute empty use: &# 160; (yes, with coma, without space between # and 1) 
 - To get barcode info from pdf, jpg, etc... use: [ByScout: BarCode Reader](https://bytescout.com/products/developer/barcodereadersdk/bytescoutbarcodereadersdk.html)
 
-![Sample img](/Sample/Sample.png "Sample")
+<img src="/Sample/Sample.png" alt="Sample img" width="144" height="256">
 
 Developer
 ---------
