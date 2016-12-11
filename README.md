@@ -29,8 +29,7 @@ Usage
 - Only use .png images with sepcific name. (Logog99x99.png ...)
 - To make an atribute empty use: &# 160; (yes, with coma, without space between # and 1) 
 - To get barcode info from pdf, jpg, etc... use: [ByScout: BarCode Reader](https://bytescout.com/products/developer/barcodereadersdk/bytescoutbarcodereadersdk.html)
-
-<img src="/Sample/Sample.png" alt="Sample img" width="144" height="256">
+- <img src="/Sample/Sample.png" alt="Sample img" width="144" height="256">
 
 Developer
 ---------
