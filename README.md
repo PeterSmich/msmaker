@@ -13,7 +13,7 @@ Installation
 ###With Python:
 
 1. Install Python 2.7 : https://www.python.org/
-2. Download msmaker as a zip and unzip it
+2. Download msmaker as a [zip](https://github.com/PeterSmich/msmaker/releases) and unzip it
 3. Run msmaker.py
 
 ###For Windows:
